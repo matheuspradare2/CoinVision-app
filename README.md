@@ -34,18 +34,20 @@ O CoinVision é um aplicativo mobile feito com **React Native + Expo** que conve
 
 ```
 conversor-moedas/
-├── App.js                  # Navegação entre as telas
-├── index.js                # Ponto de entrada do Expo
-├── api.js                  # Chamadas à AwesomeAPI (moedas, cotação, histórico)
-├── cores.js                # Paleta de cores do app
-├── telas/
-│   ├── TelaConversor.js    # Tela inicial: valor, moedas e botão de converter
-│   └── TelaResultado.js    # Resultado da conversão + gráfico de 30 dias
-├── components/
-│   ├── SeletorMoeda.js     # Campo que abre a lista de moedas com busca
-│   ├── Historico.js        # Lista das últimas conversões
-│   └── GraficoCotacao.js   # Gráfico de linha em SVG
-└── assets/                 # Ícones e splash screen
+├── App.js                      # Navegação entre as telas
+├── index.js                    # Ponto de entrada do Expo
+├── src/
+│   ├── colors.js               # Paleta de cores do app
+│   ├── services/
+│   │   └── api.js              # Chamadas à AwesomeAPI (moedas, cotação, histórico)
+│   ├── screens/
+│   │   ├── ConverterScreen.js  # Tela inicial: valor, moedas e botão de converter
+│   │   └── ResultScreen.js     # Resultado da conversão + gráfico de 30 dias
+│   └── components/
+│       ├── CurrencyPicker.js   # Campo que abre a lista de moedas com busca
+│       ├── ConversionHistory.js # Lista das últimas conversões
+│       └── RateChart.js        # Gráfico de linha em SVG
+└── assets/                     # Ícones e splash screen
 ```
 
 ## 🚀 Como rodar o projeto
